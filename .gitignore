@@ -7,3 +7,7 @@ build/
 /captures
 .externalNativeBuild
 .cxx
+
+# firma release (mai committare)
+/keystore.properties
+/.keystore/

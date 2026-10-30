@@ -13,6 +13,8 @@ Interfaccia in italiano, tema scuro, nessun asset audio: tutti i suoni sono sint
 |---|---|
 | ![Metronomo](docs/metronomo.png) | ![Cronometro](docs/cronometro.png) |
 
+APK firmato: [Releases](https://github.com/muccio/metronomo/releases).
+
 ---
 
 ## 1. Metronomo
@@ -70,7 +72,25 @@ Release (R8 attivo, APK ~0,8 MB):
 ./gradlew :app:assembleRelease
 ```
 
-APK: `app/build/outputs/apk/release/app-release-unsigned.apk` (da firmare con la propria keystore).
+APK: `app/build/outputs/apk/release/app-release.apk`
+
+### Firma
+
+La firma release è opzionale: se `keystore.properties` non esiste (clone pulito, CI) l'APK
+viene prodotto non firmato. Per firmarlo creare una keystore e un `keystore.properties`
+nella root del progetto (entrambi **ignorati da git**):
+
+```properties
+storeFile=.keystore/metronomo-release.jks
+storePassword=...
+keyAlias=metronomo
+keyPassword=...
+```
+
+```bash
+keytool -genkeypair -keystore .keystore/metronomo-release.jks -alias metronomo \
+  -keyalg RSA -keysize 4096 -validity 10950
+```
 
 ## Struttura
 
