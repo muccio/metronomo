@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Metronomo</string>
+    <string name="notification_channel_name">Cronometro attivo</string>
+    <string name="notification_channel_description">Mostra il tempo trascorso e i segnali acustici attivi</string>
+</resources>
