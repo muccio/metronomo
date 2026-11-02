@@ -1,0 +1,401 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05D72E0D4B281F84FE87C0AE /* MetronomeAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E1AA851427118D57482FFF /* MetronomeAudio.swift */; };
+		061E02E1DF66279B7BE818CE /* ChimePlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E4C42759A577D8D7C876FCB /* ChimePlayer.swift */; };
+		071A1E1BBBF6B8A198AF1CD4 /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953B25BD3FCEFC617FD3F113 /* Support.swift */; };
+		0BA27EC607592C6DB34EBE95 /* MetronomeEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6010DDAE1FC04C04C5314DCA /* MetronomeEngine.swift */; };
+		266CBD640B4D623BDD696F73 /* MetronomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10153D0FD2623BD993559137 /* MetronomeScreen.swift */; };
+		3ACE25F231190E180A5F593E /* MetronomoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 535BE22624D95864DB5ADFA2 /* MetronomoApp.swift */; };
+		4B343E97FA3F2D0822F5670C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C576262EA02C20FEF0A82A /* Theme.swift */; };
+		889A803C91B1E809F7644D1D /* ClickSynth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59287A21B92E6D8949E76279 /* ClickSynth.swift */; };
+		90074DA75C3ECF242747A073 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05922CE2C9A64ED4CA5711D6 /* RootView.swift */; };
+		9656306BA9017B2F7516F752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AD151DB07F2E9E448A5CEF /* Assets.xcassets */; };
+		9ABFC329639D016F014EACCB /* ChronometerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DB9C5BBEDDDCF08D8735C01 /* ChronometerScreen.swift */; };
+		A51B7D5C0D6E04A999B5FA0E /* ChronometerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C85E9900DF1006F583D818 /* ChronometerEngine.swift */; };
+		EE417B965B2271E7A8353FD5 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CC2E7D756DD2BA34D9334F /* Components.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05922CE2C9A64ED4CA5711D6 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		0DB9C5BBEDDDCF08D8735C01 /* ChronometerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronometerScreen.swift; sourceTree = "<group>"; };
+		10153D0FD2623BD993559137 /* MetronomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeScreen.swift; sourceTree = "<group>"; };
+		24E1AA851427118D57482FFF /* MetronomeAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeAudio.swift; sourceTree = "<group>"; };
+		50CC2E7D756DD2BA34D9334F /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		535BE22624D95864DB5ADFA2 /* MetronomoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomoApp.swift; sourceTree = "<group>"; };
+		57C576262EA02C20FEF0A82A /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		59287A21B92E6D8949E76279 /* ClickSynth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickSynth.swift; sourceTree = "<group>"; };
+		6010DDAE1FC04C04C5314DCA /* MetronomeEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeEngine.swift; sourceTree = "<group>"; };
+		7E4C42759A577D8D7C876FCB /* ChimePlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChimePlayer.swift; sourceTree = "<group>"; };
+		89AD151DB07F2E9E448A5CEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		953B25BD3FCEFC617FD3F113 /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		A2C85E9900DF1006F583D818 /* ChronometerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChronometerEngine.swift; sourceTree = "<group>"; };
+		AB0C3742782C15D1431E116E /* Metronomo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Metronomo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0CB0BA8C64C75BD12DD1C382 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				0DB9C5BBEDDDCF08D8735C01 /* ChronometerScreen.swift */,
+				50CC2E7D756DD2BA34D9334F /* Components.swift */,
+				10153D0FD2623BD993559137 /* MetronomeScreen.swift */,
+				57C576262EA02C20FEF0A82A /* Theme.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3F4EFA6F0C8CAD9379EFB279 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB0C3742782C15D1431E116E /* Metronomo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53DDE5B404FA10100DF8373A = {
+			isa = PBXGroup;
+			children = (
+				E1FD18682A35A892DF09A58D /* Metronomo */,
+				3F4EFA6F0C8CAD9379EFB279 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7B63EF3661351D40C6CC5C9F /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				7E4C42759A577D8D7C876FCB /* ChimePlayer.swift */,
+				59287A21B92E6D8949E76279 /* ClickSynth.swift */,
+				24E1AA851427118D57482FFF /* MetronomeAudio.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		7FE0089FB7691ACD4D7229DA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				89AD151DB07F2E9E448A5CEF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AEADFFB01B0B5CAD5145B1B0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				535BE22624D95864DB5ADFA2 /* MetronomoApp.swift */,
+				05922CE2C9A64ED4CA5711D6 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D4F0ABC3BDD760A00FAD7662 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2C85E9900DF1006F583D818 /* ChronometerEngine.swift */,
+				6010DDAE1FC04C04C5314DCA /* MetronomeEngine.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1FD18682A35A892DF09A58D /* Metronomo */ = {
+			isa = PBXGroup;
+			children = (
+				AEADFFB01B0B5CAD5145B1B0 /* App */,
+				7B63EF3661351D40C6CC5C9F /* Audio */,
+				D4F0ABC3BDD760A00FAD7662 /* Model */,
+				7FE0089FB7691ACD4D7229DA /* Resources */,
+				0CB0BA8C64C75BD12DD1C382 /* UI */,
+				953B25BD3FCEFC617FD3F113 /* Support.swift */,
+			);
+			path = Metronomo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8FE436E5ECCA53E8C8AD5A0C /* Metronomo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6FF2BAFBA897C7C5D54BA77 /* Build configuration list for PBXNativeTarget "Metronomo" */;
+			buildPhases = (
+				1B99FD1427178B6A14779974 /* Sources */,
+				6B0F3FE03B87BAEECE219244 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Metronomo;
+			packageProductDependencies = (
+			);
+			productName = Metronomo;
+			productReference = AB0C3742782C15D1431E116E /* Metronomo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CAEF6F377A852BEC7067054 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8FE436E5ECCA53E8C8AD5A0C = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = B9ED8C72A3587CE53D2CDCE3 /* Build configuration list for PBXProject "Metronomo" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 53DDE5B404FA10100DF8373A;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 3F4EFA6F0C8CAD9379EFB279 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8FE436E5ECCA53E8C8AD5A0C /* Metronomo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B0F3FE03B87BAEECE219244 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9656306BA9017B2F7516F752 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1B99FD1427178B6A14779974 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061E02E1DF66279B7BE818CE /* ChimePlayer.swift in Sources */,
+				A51B7D5C0D6E04A999B5FA0E /* ChronometerEngine.swift in Sources */,
+				9ABFC329639D016F014EACCB /* ChronometerScreen.swift in Sources */,
+				889A803C91B1E809F7644D1D /* ClickSynth.swift in Sources */,
+				EE417B965B2271E7A8353FD5 /* Components.swift in Sources */,
+				05D72E0D4B281F84FE87C0AE /* MetronomeAudio.swift in Sources */,
+				0BA27EC607592C6DB34EBE95 /* MetronomeEngine.swift in Sources */,
+				266CBD640B4D623BDD696F73 /* MetronomeScreen.swift in Sources */,
+				3ACE25F231190E180A5F593E /* MetronomoApp.swift in Sources */,
+				90074DA75C3ECF242747A073 /* RootView.swift in Sources */,
+				071A1E1BBBF6B8A198AF1CD4 /* Support.swift in Sources */,
+				4B343E97FA3F2D0822F5670C /* Theme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		45931813FA2A165279C114B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		9EBB463B3B96733D73916CE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = Metronomo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.metronomo.app;
+				PRODUCT_NAME = Metronomo;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C0C7B4E043F56ECC1D2CEB27 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C7EC41F571F8DEA40CB4D3C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = NO;
+				INFOPLIST_FILE = Metronomo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.metronomo.app;
+				PRODUCT_NAME = Metronomo;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9ED8C72A3587CE53D2CDCE3 /* Build configuration list for PBXProject "Metronomo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0C7B4E043F56ECC1D2CEB27 /* Debug */,
+				45931813FA2A165279C114B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D6FF2BAFBA897C7C5D54BA77 /* Build configuration list for PBXNativeTarget "Metronomo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C7EC41F571F8DEA40CB4D3C8 /* Debug */,
+				9EBB463B3B96733D73916CE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CAEF6F377A852BEC7067054 /* Project object */;
+}
