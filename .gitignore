@@ -11,3 +11,6 @@ build/
 # firma release (mai committare)
 /keystore.properties
 /.keystore/
+
+# build macOS (artefatti distribuiti via GitHub Releases)
+/macos/dist/
