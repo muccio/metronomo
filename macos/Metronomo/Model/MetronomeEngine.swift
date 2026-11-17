@@ -23,6 +23,7 @@ final class MetronomeEngine: ObservableObject {
     @Published private(set) var subdivision: Int
     @Published private(set) var accents: [Int]
     @Published private(set) var soundEnabled: Bool
+    @Published private(set) var volume: Double
     @Published private(set) var currentBeat = -1
 
     private let defaults = UserDefaults.standard
@@ -44,9 +45,12 @@ final class MetronomeEngine: ObservableObject {
         subdivision = (defaults.object(forKey: Key.subdivision) as? Int ?? 1)
             .clamped(to: 1...Self.maxSubdivision)
         soundEnabled = defaults.object(forKey: Key.sound) as? Bool ?? true
+        volume = (defaults.object(forKey: Key.volume) as? Double ?? 0.8)
+            .clamped(to: 0...1)
         accents = storedAccents.count == storedBeats
             ? storedAccents
             : (0..<storedBeats).map { $0 == 0 ? Self.accentStrong : Self.accentNormal }
+        audio.setVolume(Float(volume))
         pushParameters()
     }
 
@@ -147,6 +151,15 @@ final class MetronomeEngine: ObservableObject {
         pushParameters()
     }
 
+    /// Click volume, 0...1 in 1% steps.
+    func setVolume(_ value: Double) {
+        let clamped = (value.clamped(to: 0...1) * 100).rounded() / 100
+        guard clamped != volume else { return }
+        volume = clamped
+        defaults.set(clamped, forKey: Key.volume)
+        audio.setVolume(Float(clamped))
+    }
+
     /// Cycles the accent of one beat: strong -> normal -> silent -> strong.
     func cycleAccent(at index: Int) {
         guard accents.indices.contains(index) else { return }
@@ -222,5 +235,6 @@ final class MetronomeEngine: ObservableObject {
         static let subdivision = "metronome.subdivision"
         static let accents = "metronome.accents"
         static let sound = "metronome.sound"
+        static let volume = "metronome.volume"
     }
 }

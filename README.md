@@ -12,7 +12,7 @@ Interfaccia in italiano, tema scuro, nessun asset audio: tutti i suoni sono sint
 | Piattaforma | File | Requisiti |
 |---|---|---|
 | Android | `metronomo-1.0.0.apk` | Android 8.0+ (API 26) |
-| macOS Intel + Apple Silicon | `Metronomo-1.1.0-macOS-universal.zip` o `.dmg` | macOS 13 Ventura+ |
+| macOS Intel + Apple Silicon | `Metronomo-1.2.0-macOS-universal.zip` o `.dmg` | macOS 13 Ventura+ |
 
 Tutti i file sono in [Releases](https://github.com/muccio/metronomo/releases).
 
@@ -26,6 +26,10 @@ Tutti i file sono in [Releases](https://github.com/muccio/metronomo/releases).
 |---|---|
 | ![Metronomo](docs/metronomo.png) | ![Cronometro](docs/cronometro.png) |
 
+**Trasporto globale** (macOS): il pulsante **Avvia tutto / Ferma tutto** nell'header comanda
+metronomo e cronometro insieme, senza cambiare scheda. Il volume del click è regolabile
+dall'80% di default con slider dedicato e viene ricordato al riavvio.
+
 ---
 
 ## 1. Metronomo
@@ -38,7 +42,7 @@ Tutti i file sono in [Releases](https://github.com/muccio/metronomo/releases).
 | Suddivisione | ×1 … ×6 (duine, terzine, quartine, quintine, sestine) |
 | Accenti | Per ogni battito: **accento**, **normale**, **silenzio** (tocca il cerchio) |
 | Indicatore | Pallino attivo animato, sincronizzato con l'audio |
-| Audio | Click sintetizzati (accento più acuto e forte, suddivisioni più leggere), mute |
+| Audio | Click sintetizzati (accento più acuto e forte, suddivisioni più leggere), mute e **volume 0–100%** |
 
 **Precisione**: il click non è programmato con timer ma renderizzato campione per campione a 48 kHz.
 Ogni evento è posizionato su un frame esatto, quindi il tempo non deriva nemmeno dopo ore.

@@ -162,6 +162,38 @@ struct SecondaryButton: View {
     }
 }
 
+/// Compact transport that starts or stops both instruments at once.
+struct GlobalTransportButton: View {
+    let running: Bool
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 7) {
+                Image(systemName: running ? "stop.fill" : "play.fill")
+                    .font(.system(size: 11, weight: .bold))
+                Text(running ? "Ferma tutto" : "Avvia tutto")
+                    .font(.system(size: 12, weight: .semibold))
+            }
+            .foregroundStyle(running ? Palette.amber : Palette.onAmber)
+            .padding(.horizontal, 13)
+            .frame(height: 34)
+            .background(
+                Capsule().fill(running ? Palette.surfaceHigh : Palette.amber)
+            )
+            .overlay(
+                Capsule().strokeBorder(
+                    running ? Palette.amber.opacity(0.35) : .clear,
+                    lineWidth: 1
+                )
+            )
+        }
+        .buttonStyle(.plain)
+        .animation(.easeOut(duration: 0.15), value: running)
+        .help(running ? "Ferma metronomo e cronometro" : "Avvia metronomo e cronometro")
+    }
+}
+
 // MARK: - Metronome indicators
 
 struct BeatDot: View {

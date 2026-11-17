@@ -175,6 +175,11 @@ final class MetronomeAudio {
         renderer.setParameters(parameters)
     }
 
+    /// Output gain of the metronome only (the chronometer has its own engine).
+    func setVolume(_ value: Float) {
+        engine.mainMixerNode.outputVolume = min(1, max(0, value))
+    }
+
     @discardableResult
     func start() -> Bool {
         renderer.reset()

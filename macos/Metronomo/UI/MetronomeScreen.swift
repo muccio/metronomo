@@ -8,8 +8,8 @@ struct MetronomeScreen: View {
             VStack(spacing: 14) {
                 tempoPanel
                 beatPanel
-                signaturePanel
                 soundPanel
+                signaturePanel
                 Spacer().frame(height: 2)
                 PrimaryButton(
                     label: engine.running ? "Ferma" : "Avvia",
@@ -243,6 +243,51 @@ struct MetronomeScreen: View {
                     set: { engine.setSoundEnabled($0) }
                 )
             )
+
+            Rectangle()
+                .fill(Palette.hairline)
+                .frame(height: 1)
+                .padding(.vertical, 12)
+
+            HStack {
+                SectionLabel("Volume")
+                Spacer()
+                Text("\(Int((engine.volume * 100).rounded()))%")
+                    .font(.numeral(13))
+                    .foregroundStyle(engine.soundEnabled ? Palette.amber : Palette.textMuted)
+            }
+
+            HStack(spacing: 12) {
+                Image(systemName: volumeIcon)
+                    .font(.system(size: 15, weight: .medium))
+                    .foregroundStyle(engine.soundEnabled ? Palette.amber : Palette.textMuted)
+                    .frame(width: 20)
+
+                Slider(
+                    value: Binding(
+                        get: { engine.volume },
+                        set: { engine.setVolume($0) }
+                    ),
+                    in: 0...1,
+                    step: 0.01
+                )
+                .tint(Palette.amber)
+                .disabled(!engine.soundEnabled)
+            }
+            .padding(.top, 8)
+            .opacity(engine.soundEnabled ? 1 : 0.55)
+            .help("Volume del click del metronomo")
+        }
+    }
+
+    private var volumeIcon: String {
+        if !engine.soundEnabled || engine.volume == 0 {
+            return "speaker.slash.fill"
+        }
+        switch engine.volume {
+        case ..<0.34: return "speaker.wave.1.fill"
+        case ..<0.67: return "speaker.wave.2.fill"
+        default: return "speaker.wave.3.fill"
         }
     }
 

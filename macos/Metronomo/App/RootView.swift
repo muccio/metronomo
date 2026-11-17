@@ -47,11 +47,28 @@ struct RootView: View {
                     .foregroundStyle(Palette.textMuted)
             }
 
-            Spacer()
+            Spacer(minLength: 8)
+
+            GlobalTransportButton(running: anyRunning, action: toggleAll)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
         .padding(.horizontal, 22)
         .padding(.top, 12)
         .padding(.bottom, 14)
+    }
+
+    private var anyRunning: Bool {
+        metronome.running || chronometer.running
+    }
+
+    /// Stops whichever instrument is playing, or starts both from a standstill.
+    private func toggleAll() {
+        if anyRunning {
+            metronome.stop()
+            chronometer.pause()
+        } else {
+            metronome.start()
+            chronometer.start()
+        }
     }
 }
